@@ -14,7 +14,9 @@ Make sure the settings on your Mockaroo schema are set to **JSON** format and **
 ## Examples
 This will display the help context.
 
-```python mockaroo-to-rockset.py -h```
+```
+python mockaroo-to-rockset.py -h
+```
 
 This will publish 10 records to the collection "patrick_collection" one time in the default workspace (commons).
 
