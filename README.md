@@ -18,11 +18,21 @@ This will display the help context.
 
 This will publish 10 records to the collection "patrick_collection" one time in the default workspace (commons).
 
-```python mockaroo-to-rockset.py -c patrick_collection -i 1 "https://api.mockaroo.com/api/50c182d0?count=10&key=<your_mockaroo_key>"```
+```
+python mockaroo-to-rockset.py \
+    -c patrick_collection \
+    -i 1 \
+    "https://api.mockaroo.com/api/50c182d0?count=10&key=<your_mockaroo_key>"
+```
 
 Similar example but with an explicity workspace parameter for "test_workspace".
 
-```python mockaroo-to-rockset.py -c patrick_collection -w test_workspace "https://api.mockaroo.com/api/50c182d0?count=10&key=<your_mockaroo_key>"``` 
+```
+python mockaroo-to-rockset.py \
+    -c patrick_collection \
+    -w test_workspace \
+    "https://api.mockaroo.com/api/50c182d0?count=10&key=<your_mockaroo_key>"
+``` 
 
 ## References
 - https://rockset.com/docs/rest-api/
