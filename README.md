@@ -5,6 +5,11 @@ A simple Python example using Rockset's REST APIs to publish records from Mockar
 1. Python 3 (tested on Python 3.9.9)
 2. [requests](https://docs.python-requests.org/en/latest/)
 3. [Mockaroo](https://mockaroo.com/) account (free tier is fine)
+4. Two environment variables need to be set.
+```
+export ROCKSET_APIKEY=<your Rockset api key>
+export ROCKSET_APISERVER=<your regional Rockset api> (example format is "https://api.rs2.usw2.rockset.com")
+```
 
 ## Important
 Make sure the settings on your Mockaroo schema are set to **JSON** format and **array** is checked. It should look like this:

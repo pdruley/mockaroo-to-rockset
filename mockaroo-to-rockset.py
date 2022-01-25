@@ -14,13 +14,13 @@ headers = {"Authorization": auth,"Content-Type": "application/json"}
 #print(headers)
 
 #https://rockset.com/docs/rest-api/
-ROCKSET_API = os.getenv('ROCKSET_API')
-if ROCKSET_API:
-  api = ROCKSET_API
+ROCKSET_APISERVER = os.getenv('ROCKSET_APISERVER')
+if ROCKSET_APISERVER:
+  api = ROCKSET_APISERVER
 else:
   sys.exit(
 '''
-Missing environment variable ROCKSET_API. Please define before running again. 
+Missing environment variable ROCKSET_APISERVER. Please define before running again. 
 See https://rockset.com/docs/rest-api/ for more information
 '''
   )
